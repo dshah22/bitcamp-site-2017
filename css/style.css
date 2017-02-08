@@ -58,7 +58,7 @@ a:hover {
 }
 #nav-bar-wrapper{
   width:100%;
-  margin: 75px 10px 75px 10px;
+  margin: 75px 0 75px 0;
 }
 .opaque-wrapper{
   float:left;
@@ -71,10 +71,10 @@ a:hover {
   padding: 12px 12px;
   box-sizing: border-box;
   font-family: Aleo Light;
-  font-size: 30;
+  font-size: 24;
   border-color: rgb(241, 97, 60);
   border-style:solid;
-  border-width:7.5px;
+  border-width:4px;
   outline: none;
 }
 #canvas-holder{
@@ -96,8 +96,8 @@ a:hover {
   width: 260px;
 }
 input.button{
-  font-size:30;
-  padding:20px;
+  font-size:24;
+  padding:16px;
   width:250px;
   margin:40px 10px 40px 10px;
   background-color: rgba(241, 97, 60, .69);
@@ -115,7 +115,7 @@ input.button{
   /*line-height:29px;*/
   font-family: Avenir Light;
   text-align: left;
-  font-size: 27;
+  font-size: 24;
   color: #fa9f3a;
 }
 
