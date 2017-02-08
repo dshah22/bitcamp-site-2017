@@ -6,12 +6,12 @@ $(document).ready(function(){
 	});
   $( ".menu" ).hide();
 });
-/*$(window).on('resize', adjustLogo);
+$(window).on('resize', adjustLogo);
 function adjustLogo(){
   var half = window.innerHeight/2;
   half = half - (document.getElementById("logo").height/2);
   document.getElementById("logo").style.marginTop = half.toString() + "px";
-}*/
+}
 
 $(document).ready(function(){
   $("a").on('click', function(event) {
