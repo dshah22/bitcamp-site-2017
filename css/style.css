@@ -386,7 +386,8 @@ input.button{
 /*George's background experiments*/
 img.bg {
   /* Set up proportionate scaling */
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
 
   /* Set up positioning */
   position: fixed;
