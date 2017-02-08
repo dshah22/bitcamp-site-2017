@@ -9,8 +9,14 @@ $(document).ready(function(){
 $(window).on('resize', adjustLogo);
 function adjustLogo(){
   var half = window.innerHeight/2;
-  half = half - (document.getElementById("logo").height/2);
+  var margin = $("#nav-bar-wrapper").outerHeight() - 
+			   $("#nav-bar-wrapper").innerHeight();
+  margin /= 2;
+  half = half - (document.getElementById("logo").height
+			+ $("#nav-bar-wrapper").height()
+			+ margin)/2;
   document.getElementById("logo").style.marginTop = half.toString() + "px";
+  $(splash).height(window.innerHeight + 20);
 }
 
 $(document).ready(function(){
