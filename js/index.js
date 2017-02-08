@@ -38,19 +38,24 @@ $(document).ready(function(){
 
 var backgroundArray = ["#1","#2","#3","#4","#5","#6"];
 
-$(document).ready(function() {
+function doScroll() {
   var section = ($(document).height() - window.screen.height)/5;
   var index = Math.floor(document.body.scrollTop/section);
   for (var i = 0; i < index; i++) {
-	$(backgroundArray[i]).css({'opacity': 0});
+	$(backgroundArray[i]).css({'visibility': 'hidden'});
   }
   var opacity = Math.round((1-((document.body.scrollTop/section) - index))*100)/100;
   $(backgroundArray[index]).css({'opacity': opacity});
-});
-
-window.onscroll = function(){
-  var section = ($(document).height() - window.screen.height)/5
-  var index = Math.floor(document.body.scrollTop/section);
-  var opacity = Math.round((1-((document.body.scrollTop/section) - index))*100)/100;
-  $(backgroundArray[index]).css({'opacity': opacity});
+  $(backgroundArray[index]).css({'visibility': 'visible'});
+  if (index + 1 < backgroundArray.length) {
+	$(backgroundArray[index + 1]).css({'visibility': 'visible'});
+	$(backgroundArray[index + 1]).css({'opacity': '1'});
+  }
+  
+  for (var i = index + 2; i < backgroundArray.length; i++) {
+	$(backgroundArray[i]).css({'visibility': 'hidden'});
+  }
 }
+
+$(document).ready(doScroll);
+window.onscroll = doScroll;

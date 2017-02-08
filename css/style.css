@@ -138,18 +138,28 @@ input.button{
 }
 
 .recruiter-images{
-  width: 40%;
+  max-width: 40%;
   margin: 50px 10px;
+  max-height: 80px;
+  display: inline-block;
+}
+
+#sponsors {
+  vertical-align: middle;
 }
 
 .api-images{
-  width: 30%;
+  max-width: 30%;
   margin: 30px 10px;
+  max-height: 60px;
+  display: inline-block;
 }
 
 .starter-images{
-  width: 20%;
+  max-width: 20%;
   margin: 30px 30px;
+  max-height: 40px;
+  display: inline-block;
 }
 
 .social-media-images {
@@ -168,7 +178,6 @@ input.button{
 }
 
 .copyright {
-  padding-top: 50px;
   color: white;
   font-family: Avenir Light;
 }
