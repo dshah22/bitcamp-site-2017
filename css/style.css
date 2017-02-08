@@ -119,6 +119,15 @@ input.button{
   color: #fa9f3a;
 }
 
+.date-text{ 
+  /*line-height:29px;*/
+  font-family: Aleo;
+  text-align: center;
+  font-size: 36;
+  color: #eb673f;
+  font-weight:1000;
+}
+
 .row {
   display: inline-block;
   vertical-align: middle;
