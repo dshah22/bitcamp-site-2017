@@ -105,13 +105,8 @@ a:hover {
   padding: 16px 16px 16px 16px;
   display: inline-block;
   width: 260px;
-}
-.button3{
-  font-size:24;
-  padding:16px;
-  width:250px;
-  margin:40px 10px 40px 10px;
-  background-color: rgba(241, 97, 60, .69);
+  border-width: 3px;
+  
 }
 .body-text{
   padding:0px 20px 0px 40px;
