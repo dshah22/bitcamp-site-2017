@@ -1,6 +1,14 @@
 <html>
     <head>
 	<title>Bitcamp 2017</title>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MRPP8J');</script>
+	<!-- End Google Tag Manager -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="bitcamp">
 
@@ -25,6 +33,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
     <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRPP8J"
+		   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<img src ="img/bg2day4.png" class="bg" id="6"></img>
 	<img src ="img/bg1dawn4.png" class="bg" id="5"></img>
 	<img src ="img/bg4night4.png" class="bg" id="4"></img>
@@ -46,21 +58,18 @@
 	<div class="menu">
 	    <ul>
 		<a href="#faq"><li>FAQ</li></a>
-		<!-- <a href="register.html"><li>REGISTER</li></a>
-      <a href="#"><li>COLORWAR</li></a>  -->
       <a href="#sponsors"><li>SPONSORS</li></a>
       <a href="#contact"><li>CONTACT</li></a>
 	    </ul>
 	</div>
 	<div id="content-wrapper">
 	    <div id="splash">
-		<img id="logo" src="img/bitcamp-logo-badge.png"/>
+		<img id="logo" src="img/bitcamp-logo-badge.png" 
+		margin-top="500px"/>
 		<h1 class="date-text">April 7-9, 2017</h1>
 		<!-- <h1>bitcamp</h1> -->
 		<div id="nav-bar-wrapper">
 		    <a class="button" href="#faq">FAQ</a>
-		    <!-- <a class="button" href="register.html">REGISTER</a>
-	  <a class="button" href="#">COLORWAR</a> -->
 	  <a class="button" href="#sponsors">SPONSORS</a>
 	  <a class="button" href="#contact">CONTACT</a>
 		</div>
@@ -71,14 +80,8 @@
 		learn something new, and make something awesome. With world-class
 		mentors and hundreds of fellow campers, you're in for an amazing
 		time. If you're ready for an adventure, see you by the fire!</p>
-		<!-- <a href = "register.html" class="button2" 
-      text-decoration="none">REGISTER</a> -->
-  <form action="//bitca.us14.list-manage.com/subscribe/post?u=8d420d7289f5918838f6ce9e8&amp;id=8d4989f015" method="post" target="_blank" novalidate>
-      <!--  <a href = "register.html" class="button2" 
-	  text-decoration="none">REGISTER</a> -->
-      <input type="text" id="input-email" placeholder="example@email.com"/>
-      <input type="submit" class="button" value="GET UPDATES"/>		
-  </form>
+		<a href = "register.html" class="button2" 
+      text-decoration="none">REGISTER</a>
 	    </div>
 	    <img class="content-images" src="img/banner-1.jpg"/>
 	    <div id="faq" class="opaque-wrapper">
@@ -88,8 +91,7 @@
 		    <p class="body-text">
 		    Bitcamp is a place for exploration. We're a hackathon that values
 		    participant experience and mentorship over competitiveness and points.
-		    Come to have fun with your friends, learn something new, eat s'mores
-		    , and have a generally awesome time. We have all sorts of crazy
+		    Come to have fun with your friends, learn something new, eat s'mores, and have a generally awesome time. We have all sorts of crazy
 		    activities planned for you...you'll have to come to find out the rest!</p>
 		    <h3 class="heading"> What's a hackathon? </h3>
 		    <p class="body-text">
@@ -174,21 +176,38 @@
 	    </div>
 	    <img class="content-images" src="img/bitcamp1.png"/>
 	    <div id="sponsors" class="opaque-wrapper">
-		<h2 class="heading"> Sponsors </h2>
-		<img class="recruiter-images" src="img/CapitalOne.svg"/>
-		<img class="recruiter-images" src="img/Leidos.svg"/>
-		<img class="recruiter-images" src="img/Facebook.svg"/>
-		<img class="api-images" src="img/Cipher.svg"/>
-		<img class="api-images" src="img/OPIS.svg"/>
-		<img class="api-images" src="img/Lockheed-martin-logo.png"/>
-		<img class="api-images" src="img/aie.svg"/>
-		<img class="api-images" src="img/BSOS_Logo.jpg"/>
-		<img class="api-images" src="img/Appian.png"/>
-		<img class="api-images" src="img/Praxis-logo.png"/>
-		<img class="starter-images" src="img/math.png"/>
-		<img class="starter-images" src="img/Asymmetrik_logo.png"/>
-		<img class="starter-images" src="img/PayPal.png"/>
-		<img class="starter-images" src="img/Namecheap2.svg"/>
+          <h2 class="heading"> Sponsors </h2> 
+          <div id="corporate-sponsors" class="sponsor-logo-div">
+            <img class="corporate-images" src="img/sponsors/finra.svg"/>
+          </div>
+          <div id="recruiter-sponsors" class="sponsor-logo-div">
+            <img class="recruiter-images" src="img/sponsors/capone.png"/>
+            <img class="recruiter-images" src="img/sponsors/Leidos.svg"/>
+	    <img class="recruiter-images" src="img/sponsors/apl.png"/>
+	    <img class="recruiter-images" src="img/sponsors/bloomberg.png"/>
+
+
+
+          </div>
+          <div class="api-sponsors" class="sponsor-logo-div">
+            <img class="api-images" id="ciphertech" src="img/sponsors/Cipher.png"/>
+            <img class="api-images" src="img/sponsors/OPIS.svg"/>
+            <img class="api-images" src="img/sponsors/Lockheed-martin-logo.png"/>
+            <img class="api-images" src="img/sponsors/aie.svg"/>
+            <img class="api-images" src="img/sponsors/BSOS_Logo.jpg"/>
+            <img class="api-images" src="img/sponsors/Appian.png"/>
+            <img class="api-images" src="img/sponsors/Praxis-logo.png"/>
+	    <img class="api-images" src="img/sponsors/insomnia cookies.png"/>
+
+          </div>
+          <div class="starter-sponsors" class="sponsor-logo-div">
+            <img class="starter-images" src="img/sponsors/math.png"/>
+            <img class="starter-images" src="img/sponsors/Asymmetrik_logo.png"/>
+            <img class="starter-images" src="img/sponsors/PayPal.png"/>
+            <img class="starter-images" src="img/sponsors/Namecheap2.svg"/>
+	    <img class="starter-images" src="img/sponsors/Soylent.svg"/>
+
+          </div>
 	    </div>
 	    <div id="contact" class="opaque-wrapper">
 		<h3 class="contact" style="padding: 40px 25px">Feel free to <a href="mailto:hello@bitca.mp" class="footer">email</a> or tweet us <a href="https://twitter.com/bitcmp" class="footer">@bitcmp<a><p>
